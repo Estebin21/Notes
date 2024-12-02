@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.AboutPage"
+             Title="About">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="10">
+            <!-- Tu ícono personal -->
+            <Image Source="troleo_krong.jpg" 
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   HorizontalOptions="Center" />
+
+            <!-- Nombre -->
+            <Label Text="Esteban Narváez" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Descripción personal -->
+            <Label Text="Soy un estudiante de la UDLA de 20 años apasionado por los videojuegos" 
+            FontSize="16" 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center" />
+
+            <!-- Botón para aprender más -->
+            <Button Text="Learn more..."
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    Clicked="LearnMore_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
